@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css" integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ=="
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js" integrity="sha256-G6jsRyH1fxbsvFIXSCuwYmI1aIDYBa28xscrvmYjJy0= sha384-vtoG68NvPc9azmFJr447vvY8qgdyA4FdaJ5/bqvzIM4eAdZfO0iyRRF8l2AAscYI sha512-43seCcNrHA0BQgrtyajB9sp8yOdv5c8QdYvgjP7zJ7v+dmzAcxYDQ2gupb9aztsNWBq1COIp/3NHYkQs4l/dkg=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="techdoc.css">
+    <title>FCC - Technical Documentation</title>
+</head>
+
+<body>
+
+    <div class="grid-container full">
+        <div class="medium-cell-block-container">
+            <div class="grid-x">
+                <nav id="navbar" class="cell small-2">
+                    <ul class="vertical menu">
+                        <header class="text-center">JavaScript Starter</header>
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                        <a class="nav-link" href="#what_you_should_already_know">What you should already know</a>
+                        <a class="nav-link" href="#hello_world">Hello world</a>
+                        <a class="nav-link" href="#declaring_variables">Declaring variables</a>
+                        <a class="nav-link" href="#data_types">Data types</a>
+                    </ul>
+                </nav>
+                <div class="cell small-6 small-offset-2">
+                    <main id="main-doc">
+                        <section class="main-section" id="introduction">
+                            <header>Introduction</header>
+                            <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
+                                language. Inside a host environment (for example, a web browser), JavaScript can be connected
+                                to the objects of its environment to provide programmatic control over them.
+                            </p>
+                            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core
+                                set of language elements such as operators, control structures, and statements. Core JavaScript
+                                can be extended for a variety of purposes by supplementing it with additional objects; for
+                                example:
+                            </p>
+
+                            <li>Client-side JavaScript extends the core language by supplying objects to control a browser and
+                                its Document Object Model (DOM). For example, client-side extensions allow an application
+                                to place elements on an HTML form and respond to user events such as mouse clicks, form input,
+                                and page navigation. </li>
+                            <li>
+                                Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example,
+                                server-side extensions allow an application to communicate with a database, provide continuity
+                                of information from one invocation to another of the application, or perform file manipulations
+                                on a server.
+                            </li>
+                        </section>
+                        <section class="main-section" id="what_you_should_already_know">
+                            <header>What you should already know</header>
+                            <p>This guide assumes you have the following basic background:</p>
+                            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                            <li>Some programming experience. If you are new to programming, try one of the tutorials linked on
+                                the main page about JavaScript.</li>
+                        </section>
+                        <section class="main-section" id="hello_world">
+                            <header>Hello world</header>
+                            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
+                                JavaScript code:
+                            </p>
+                            <code>function greetMe(yourName) {
+                            alert("Hello " + yourName);
+                            }
+                            greetMe("World");
+                            </code>
+                        </section>
+                        <section class="main-section" id="declaring_variables">
+                            <header>Declaring variables</header>
+                            <p>You can declare a variable in three ways:</p>
+                            <p>With the keyword var. For example,</p>
+                            <code>var x = 42;</code>
+                            <p>This syntax can be used to declare both local and global variables.</p>
+                            <p>By simply assigning it a value. For example,</p>
+                            <code>x = 42;</code>
+                            <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't
+                                use this variant.
+                            </p>
+                            <p>With the keyword let. For example,</p>
+                            <code>let y = 13;</code>
+                        </section>
+                        <section class="main-section" id="data_types">
+                            <header>Data types</header>
+                            <p>The latest ECMAScript standard defines seven data types:</p>
+                            <p>Six data types that are primitives:</p>
+                            <li>Boolean. true and false.</li>
+                            <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is
+                                not the same as Null, NULL, or any other variant.</li>
+                            <li>undefined. A top-level property whose value is undefined.</li>
+                            <li>Number. 42 or 3.14159.</li>
+                            <li>String. "Howdy"</li>
+                            <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                            <p>and Object
+                                <code>let cat = new Animal();</code>
+                            </p>
+                            <p>Although these data types are a relatively small amount, they enable you to perform useful functions
+                                with your applications. Objects and functions are the other fundamental elements in the language.
+                                You can think of objects as named containers for values, and functions as procedures that
+                                your application can perform.
+                            </p>
+
+                        </section>
+                    </main>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

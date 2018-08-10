@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="product.css">
+    <title>FCC - Product landing page</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <img class="responsive-img circle" width="50px" height="auto" id="header-img" alt="logo" src="https://img00.deviantart.net/d0af/i/2016/257/d/5/trance_logo_redone_by_aeonsdesigns-dahlv3v.png">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#section-video" class="nav-link">Video</a>
+                        </li>
+                        <li>
+                            <a href="#section-specs" class="nav-link">Product Specifications</a>
+                        </li>
+                        <li>
+                            <a href="#section-form" class="nav-link">Subscribe</a>
+                        </li>
+                    </ul>
+        
+            </div>
+        </nav>
+    </header>
+    <section id="section-video">
+        <iframe id="video" src="https://www.youtube.com/embed/XqPN68BIxyI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+    <article id="section-specs">
+        <h2>This is what we offer</h2>
+        <p>This thing</p>
+        <p>And this other thing</p>
+    </article>
+    <div id="section-form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <input type="email" id="email" placeholder="email@test.com" required name="email">
+            <input class="waves-effect waves-light btn" type="submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>

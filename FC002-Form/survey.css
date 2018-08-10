@@ -1,0 +1,9 @@
+textarea {
+    resize: none;
+}
+
+.container {
+    background-color: rgb(231, 228, 228);
+    padding: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
